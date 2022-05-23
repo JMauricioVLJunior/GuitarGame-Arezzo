@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="Pepsi.Sorter.Service" elementFormDefault="qualified" targetNamespace="Pepsi.Sorter.Service" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://moriah-10/PremiacaoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Pepsi.Sorter.Web" />
+  <xs:element name="GetSequenciaPremiacao">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetSequenciaPremiacaoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Pepsi.Sorter.Web" minOccurs="0" name="GetSequenciaPremiacaoResult" nillable="true" type="q1:SequenciaPremiacaoDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPremio">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Tela" type="xs:int" />
+        <xs:element minOccurs="0" name="evento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetPremioResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/Pepsi.Sorter.Web" minOccurs="0" name="GetPremioResult" nillable="true" type="q2:PremioDTO" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarcaJogada">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ordem" type="xs:int" />
+        <xs:element minOccurs="0" name="Tela" type="xs:int" />
+        <xs:element minOccurs="0" name="evento" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="MarcaJogadaResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CarimbaPremiacao">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IDPremiacao" type="xs:int" />
+        <xs:element minOccurs="0" name="OrdemDaJogada" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CarimbaPremiacaoResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

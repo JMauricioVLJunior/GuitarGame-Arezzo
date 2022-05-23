@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="912e5282-ced6-4748-bd22-119e8e33cef6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://MORIAH-10/PremiacaoService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PremiacaoService.xsd" MetadataType="Schema" ID="ecf86b4e-cc18-445a-9b04-6771fb803ac1" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PremiacaoService1.xsd" MetadataType="Schema" ID="ec089629-3bfd-4533-88ab-32cb5cc916e6" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PremiacaoService2.xsd" MetadataType="Schema" ID="f63025e3-5a65-46ec-b56e-3df3ab8d58a2" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PremiacaoService3.xsd" MetadataType="Schema" ID="a2a786dd-6341-4851-bb38-0ad6ba5c4009" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PremiacaoService.wsdl" MetadataType="Wsdl" ID="bf209256-074e-4aea-ae31-329ef42c62af" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?wsdl=wsdl0" />
+    <MetadataFile FileName="PremiacaoService1.wsdl" MetadataType="Wsdl" ID="3142566f-bd4b-44ba-8085-c291ee0f62ba" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?wsdl" />
+    <MetadataFile FileName="PremiacaoService.disco" MetadataType="Disco" ID="dd7e7e43-2992-4475-9c97-121524359d6a" SourceId="1" SourceUrl="http://moriah-10/PremiacaoService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

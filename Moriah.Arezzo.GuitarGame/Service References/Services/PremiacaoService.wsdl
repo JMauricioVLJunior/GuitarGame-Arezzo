@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="Pepsi.Sorter.Service" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="Pepsi.Sorter.Service" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="Pepsi.Sorter.Service/Imports">
+      <xsd:import schemaLocation="http://moriah-10/PremiacaoService.svc?xsd=xsd0" namespace="Pepsi.Sorter.Service" />
+      <xsd:import schemaLocation="http://moriah-10/PremiacaoService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://moriah-10/PremiacaoService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Pepsi.Sorter.Web" />
+      <xsd:import schemaLocation="http://moriah-10/PremiacaoService.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="PremiacaoService_GetSequenciaPremiacao_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetSequenciaPremiacao" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_GetSequenciaPremiacao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetSequenciaPremiacaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_GetPremio_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPremio" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_GetPremio_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPremioResponse" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_MarcaJogada_InputMessage">
+    <wsdl:part name="parameters" element="tns:MarcaJogada" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_MarcaJogada_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MarcaJogadaResponse" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_CarimbaPremiacao_InputMessage">
+    <wsdl:part name="parameters" element="tns:CarimbaPremiacao" />
+  </wsdl:message>
+  <wsdl:message name="PremiacaoService_CarimbaPremiacao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CarimbaPremiacaoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="PremiacaoService">
+    <wsdl:operation name="GetSequenciaPremiacao">
+      <wsdl:input wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/GetSequenciaPremiacao" message="tns:PremiacaoService_GetSequenciaPremiacao_InputMessage" />
+      <wsdl:output wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/GetSequenciaPremiacaoResponse" message="tns:PremiacaoService_GetSequenciaPremiacao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPremio">
+      <wsdl:input wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/GetPremio" message="tns:PremiacaoService_GetPremio_InputMessage" />
+      <wsdl:output wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/GetPremioResponse" message="tns:PremiacaoService_GetPremio_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MarcaJogada">
+      <wsdl:input wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/MarcaJogada" message="tns:PremiacaoService_MarcaJogada_InputMessage" />
+      <wsdl:output wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/MarcaJogadaResponse" message="tns:PremiacaoService_MarcaJogada_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CarimbaPremiacao">
+      <wsdl:input wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/CarimbaPremiacao" message="tns:PremiacaoService_CarimbaPremiacao_InputMessage" />
+      <wsdl:output wsaw:Action="Pepsi.Sorter.Service/PremiacaoService/CarimbaPremiacaoResponse" message="tns:PremiacaoService_CarimbaPremiacao_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

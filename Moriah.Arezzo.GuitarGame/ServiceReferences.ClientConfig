@@ -1,0 +1,17 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_PremiacaoService">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:56138/PremiacaoService.svc" binding="customBinding"
+                bindingConfiguration="CustomBinding_PremiacaoService" contract="Services.PremiacaoService"
+                name="CustomBinding_PremiacaoService" />
+        </client>
+    </system.serviceModel>
+</configuration>
